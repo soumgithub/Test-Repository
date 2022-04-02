@@ -1,0 +1,97 @@
+To change directory permisions in linux use the following
+chmod+rwx to add permissions
+chmod-rwx directoryname to remove permission
+
+
+permission in linux:3 3 3
+
+a)3 types of permissions
+b)always displayed in set of 3 (rwx)
+c)3 different categories of people.ie;permission for user,group and everybody else
+
+
+1.read:someone who can only read or view the contents of a file or directory cannot make any changes ,eg:r-- meaning only read first
+ dash-no writing,second dash -no execute
+
+2.write:you can and save and update but cannot run or execute
+
+3.execute : you can execute something like a script
+
+you can have more than one permission at a time.
+eg:rw- meaning:read, write, no execute
+eg:r-x meaning:read, no write ,execute
+
+in windows we have administrator,in linux its superuser called root-can do anything you want.
+
+read - 4
+write - 2
+execute - 1
+
+two paths : absolute and relative path
+
+cd / :take you to the root directory : - /
+pwd :to confirm you are in your root directory
+ls -l :displays everything in root directory
+home directory : cd home
+to go to soumya folder : cd s then hit tab key ,linux completes the word for you ,enter and type pwd 
+to take you one level up : cd ..
+to "        two  "     " : cd ../..
+
+copy command : cp ,copy keeps the original copy and creates a brand new file
+remove : rm 
+move : rename: mv ,move the original file and its contents to a diff name
+
+to create a directory : mkdir directory name eg:mkdir test
+to remove a directory use -r flag eg:rm -r test 1 where test 1 is the directory 
+
+top command:
+it shows memory uses,cpu 
+ie;it shows how your system or server is doing
+
+More top commands avaialable in www.binarytides.com/linux-top-command/
+to exit from top commnd : cnrtl c
+
+PROCESS COMMAND:ps : lists all process in the linux server.
+A running task or activity or a process or a script creates a process.
+
+VI EDITOR:
+inbuilt editor in linux,lets you create or edit files.its strictly command line editor.
+only works with keyboard not mouse,.
+
+
+
+GREP COMMAND:is used to search for a string or a word inside a file ,search for a string inside a result.,not a file name
+"|" used to combine 2 commands. eg: ps -ef | grep root (grep means search root)
+that doesnt mean it will display results from 2 commands,it will execute the first command and the result is used as the input for the 
+second command to run the second command.
+
+for eg:to search a word "demo" in a file marketing.txt
+ (hello this is a demo class,
+  hope this demo helps )
+grep -i demo marketing.txt
+
+grep can be used once at a time
+:wq to save the file
+ 
+
+WC COMMAND:word count
+
+-i :removes case sensitivity
+
+netstat :tells you all the port numbers are being used 
+eg:if you are asked to find the port number 8080 netstat -an | grep 8080
+Default port number :7001
+
+tail command:shows you last couple of commands
+eg :to show the last 10 lines,  tail -10 file name
+
+head command :top couple of lines
+ 
+to go to a specific row ,make sure you are not in insert mode,type line no (for eg 21),then shift g.
+
+
+
+
+
+
+
